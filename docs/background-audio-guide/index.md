@@ -27,6 +27,7 @@ This involves these steps:
 4. Settings for the background audio guide will appear at bottom under plugin settings.
 5. There you will see *Audio File Path* field. Enter the path to the audio file you want to play as background audio. Save changes by clicking *Save and continue* button.
 
+
 ### Aduio Guide Start Button
 
 You need to add a button to start the audio guide. You may add this button in any slide of your presentation. You also need to decided which slide you want to end the audio guide.
@@ -68,15 +69,21 @@ In above example, only slides from #2 to #5 appeared in the audio track. That is
 
 #### Audio Controls
 
-You can play, pause the audio track to help you in this synchronization process. You can also adjust the play rate.
+You can play, pause the audio track using the button **⏯**, to help you in this synchronization process. You can also adjust the play rate.
 
 You can click anywhere on the audio track to place the play head at that position. On pressing the Play button the audio will start playing from that position.
 
-First control button called "Got to start" helps you to put the play head at the start of the audio track. The button named "Go to start of last transition" helps you to put the play head at the start of the last transition from the current play head position.
+First control button **⏮** named *Got to start* helps you to put the play head at the start of the audio track. The button named *Go to start of last transition* helps you to put the play head at the start of the last transition from the current play head position.
 
 #### Playing Preview
 
 You can test the audio guide by clicking in the start button. In the preview, go to the slide where you put the start button and press the start button to start playing the audio guide. You should see the presentation advancing automatically as the audio plays.
+
+You may notice that while the audio is playing, the presentation control buttons will be disappeared. It is because the presentation  don't want to be interacted causing the audio go out of sync.
+
+##### Resizing the Preview
+
+You can resize the preview window by dragging the bottom right corner of the presentation preview.
 
 #### Save
 
@@ -86,7 +93,7 @@ Once you are done with the synchronization, you should have adjusted the regions
 
 <figure markdown="span">
   ![Synchronized audio guide](../images/audio-sync-studio-synchronized.png)
-  <figcaption>Synchronized audio guide</figcaption>
+  <figcaption>Synchronized audio guide with regions matching the audio track.</figcaption>
 </figure>
 
-Press the *Save* button to go back the presentation edit page.
+Press the *Save* button to save changes and go back the presentation edit page.
