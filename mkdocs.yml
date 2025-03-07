@@ -1,0 +1,8 @@
+site_name: Present
+site_url: https://wickwood-llc.github.io/present-docs
+theme:
+  name: material
+
+nav:
+  - index.md
+  - about.md
