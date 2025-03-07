@@ -1,4 +1,4 @@
-# Present
+# Introduction
 
 Drupal module for creating presentations, integrating Reveal.js.
 
