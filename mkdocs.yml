@@ -5,6 +5,7 @@ theme:
   features:
     - content.action.edit
     - content.action.view
+    - content.code.copy
 
 nav:
   - index.md
@@ -16,3 +17,17 @@ edit_uri: edit/master/docs/
 
 markdown_extensions:
   - admonition
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+  - attr_list
+  - md_in_html
+  - pymdownx.blocks.caption
+
+plugins:
+  - glightbox
+
