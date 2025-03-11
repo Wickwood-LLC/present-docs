@@ -6,6 +6,7 @@ theme:
     - content.action.edit
     - content.action.view
     - content.code.copy
+    - content.tooltips
 
 nav:
   - index.md
@@ -31,6 +32,9 @@ markdown_extensions:
   - pymdownx.caret
   - pymdownx.mark
   - pymdownx.tilde
+  - abbr
+  - toc:
+      permalink: true
 
 plugins:
   - glightbox
