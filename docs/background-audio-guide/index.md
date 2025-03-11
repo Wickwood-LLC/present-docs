@@ -32,21 +32,22 @@ This involves these steps:
 
 You need to add a button to start the audio guide. You may add this button in any slide of your presentation. You also need to decided which slide you want to end the audio guide.
 
-Let's assume you have a presenation witth 6 slides. In first slide you have and introduction to the presenation and form the second slide to the fifth slide you want to guide the audience through the presentation with a background audio. 
+Let's assume you have a presenation witth 6 slides. In first slide you have an introduction to the presenation. From the 2^nd^ slide to the 5^th^  slide you want to guide the audience with a background audio. 
 
 1. In the Presentation edit page, go to *Content* of the Slide #2.
-2. Add HTML code for the audio start button:
+2. Add HTML code for the audio start button, like this:
 
-    ``` html
-    <button data-bg-audio-start-button data-bg-audio-end-slide="5">Start</button>
-    ```
+	``` html
+	<button data-bg-audio-start-button data-bg-audio-end-slide="5">Start</button>
+	```
 
-    The attribute *data-bg-audio-start-button* indicates it is a button to start the audio guide. The attribute *data-bg-audio-end-slide* indicates the slide number where the audio guide should end. You need to keep these two attribtibutes other wise you adjust class or other attributes of your choice for styling for other purposes.
+	The attribute *data-bg-audio-start-button* indicates it is a button to start the audio guide. The attribute *data-bg-audio-end-slide* indicates the slide number where the audio guide should end. You need to keep these two attribtibutes. You may adjust class or other attributes of your choice for styling for other purposes.
+
 3. Save changes by clicking *Save and continue* button.
 
 ### Synchronize Audio with Slides
 
-In this step you decide how much time slides and fragmentations should take while the audio guide is playing.
+In this step you decide how much time each slides and fragmentations should take while the audio guide is playing.
 
 In the presentation edit page, go to **Audio Sync Studio** tab. You should see something like this:
 
@@ -55,7 +56,7 @@ In the presentation edit page, go to **Audio Sync Studio** tab. You should see s
   <figcaption>Audio Sync Studio</figcaption>
 </figure>
 
-You have presentation preview on top and visualized audio track on the bottom. The audio track is divided into regions. Each region corresponds to a slide or a fragment or transition in the presentation.
+You will have a presentation preview on top and visualized audio track on the bottom. The audio track is divided into regions. Each region corresponds to a slide or a fragment or transition in the presentation.
 
 #### Adjust the Duration of Slides and Fragments
 
@@ -65,7 +66,7 @@ You cannot resize the regions for transitions. You can only drag them to adjust 
 
 For the first time, the regions for slides and fragments will be with a minimum width set (which is 100 milliseconds). You can resize and drag them to adjust their start position and duration to match with the audio track.
 
-In above example, only slides from #2 to #5 appeared in the audio track. That is because we start plaing the audio from the second slide and ends in 5th slide.
+In above example, only slides from #2 to #5 appeared in the audio track. That is because we start playing the audio from the 2^nd^ slide and ends in the 5^th^ slide.
 
 #### Audio Controls
 
@@ -79,7 +80,8 @@ First control button **⏮** named *Got to start* helps you to put the play head
 
 You can test the audio guide by clicking in the start button. In the preview, go to the slide where you put the start button and press the start button to start playing the audio guide. You should see the presentation advancing automatically as the audio plays.
 
-You may notice that while the audio is playing, the presentation control buttons will be disappeared. It is because the presentation  don't want to be interacted causing the audio go out of sync.
+!!! info "Presentation Controls Disappeared"
+    You may notice that while the audio is playing, the presentation control buttons will be disappeared. It is because the presentation  don't want to be interacted, causing the audio go out of sync.
 
 ##### Resizing the Preview
 
@@ -96,4 +98,4 @@ Once you are done with the synchronization, you should have adjusted the regions
   <figcaption>Synchronized audio guide with regions matching the audio track.</figcaption>
 </figure>
 
-Press the *Save* button to save changes and go back the presentation edit page.
+Press the *Save* button to save changes and go back to the presentation edit page.
